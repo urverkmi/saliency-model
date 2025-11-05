@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saliency UI Mockup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="content">
+      <h1 id="main-text">Main Title</h1>
+      <p id="sub-text">This is the supporting subtext.</p>
+      <button id="cta-button">Click Me</button>
+    </div>
+
+    <div class="controls">
+      <h2>Adjust Saliency</h2>
+
+      <label>Font Size:
+        <input type="range" id="font-size" min="12" max="60" value="32">
+      </label>
+
+      <label>Font Weight:
+        <input type="range" id="font-weight" min="100" max="900" step="100" value="400">
+      </label>
+
+      <label>Color:
+        <input type="color" id="color-picker" value="#007BFF">
+      </label>
+
+      <label>Target:
+        <select id="target-element">
+          <option value="main-text">Main Text</option>
+          <option value="sub-text">Subtext</option>
+          <option value="cta-button">Button</option>
+        </select>
+      </label>
+
+      <button id="screenshot">Take Screenshot</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
